@@ -1,0 +1,7 @@
+<document>
+	<p><cms:text constant="call_me_back" /></p>
+
+	<a href="javascript:void(0)" class="call">
+		<cms:text constant="yes_call_me" />
+	</a>
+</document>

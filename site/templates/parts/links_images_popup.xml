@@ -1,0 +1,73 @@
+<document>
+	<!-- This template is done in order to have a hover effect on image and link together -->
+	<!-- Stomach article link -->
+		<a href="#stomach">
+			<cms:text constant="stomach" />
+			<img
+				src="_BASEURL.'/site/images/ballon.jpg'"
+				alt="stomach_ballon"
+				cms:eval="src"
+				/>
+		</a>
+
+		<!-- Cure for fat article link -->
+		<a href="#cure">
+			<cms:text constant="cure" />
+			<img
+				src="_BASEURL.'/site/images/drugs.jpg'"
+				alt="drugs"
+				cms:eval="src"
+				/>
+		</a>
+
+		<!-- Bariatric article link -->
+		<a href="#bariatric">
+			<cms:text constant="bariatric" />
+			<img
+				src="_BASEURL.'/site/images/surgery.jpg'"
+				alt="surgery_doctor"
+				cms:eval="src"
+				/>
+		</a>
+
+		<!-- Nutrition article link -->
+		<a href="#nutrition">
+			<cms:text constant="nutrition" />
+			<img
+				src="_BASEURL.'/site/images/food.jpg'"
+				alt="food"
+				cms:eval="src"
+				/>
+		</a>
+
+		<!-- Emotional support article link -->
+		<a href="#emotion">
+			<cms:text constant="emotional_support" />
+			<img
+				src="_BASEURL.'/site/images/emotions.jpg'"
+				alt="emotions"
+				cms:eval="src"
+				/>
+		</a>
+
+
+		<!-- Fitness article link -->
+		<a href="#fitness">
+			<cms:text constant="fitness" />
+			<img
+				src="_BASEURL.'/site/images/exercise.jpg'"
+				alt="exercise"
+				cms:eval="src"
+				/>
+		</a>
+
+		<!-- Sleep article link -->
+		<a href="#sleep">
+			<cms:text constant="sleep" />
+			<img
+				src="_BASEURL.'/site/images/sleep_test.jpg'"
+				alt="sleep_test"
+				cms:eval="src"
+				/>
+		</a>
+</document>

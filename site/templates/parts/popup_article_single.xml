@@ -1,0 +1,106 @@
+<document>
+	<!-- Popup Articles -->
+	<div id="stomach" class="popup">
+		<cms:module
+			name="articles"
+			action="show"
+			text_id="stomach"
+			group="popup_articles"
+			template="stock/article_generic.xml"
+			>
+			<param name="title" value=""/>
+			<param name="title_tag" value="h3"/>
+		</cms:module>
+		<a href="#" class="close"><cms:svg file="site_sprite.svg" symbol="icon-cross"/></a>
+	</div>
+
+	<!-- Fat cure -->
+	<div id="cure" class="popup">
+		<cms:module
+			name="articles"
+			action="show"
+			text_id="fat_cure"
+			group="popup_articles"
+			template="stock/article_generic.xml"
+			>
+			<param name="title" value=""/>
+			<param name="title_tag" value="h3"/>
+		</cms:module>
+		<a href="#" class="close"><cms:svg file="site_sprite.svg" symbol="icon-cross"/></a>
+	</div>
+
+	<!-- Bariatric -->
+	<div id="bariatric" class="popup">
+		<cms:module
+			name="articles"
+			action="show"
+			text_id="bariatric"
+			group="popup_articles"
+			template="stock/article_generic.xml"
+			>
+			<param name="title" value=""/>
+			<param name="title_tag" value="h3"/>
+		</cms:module>
+		<a href="#" class="close"><cms:svg file="site_sprite.svg" symbol="icon-cross"/></a>
+	</div>
+
+	<!-- nutrition -->
+	<div id="nutrition" class="popup">
+		<cms:module
+			name="articles"
+			action="show"
+			text_id="nutrition"
+			group="popup_articles"
+			template="stock/article_generic.xml"
+			>
+			<param name="title" value=""/>
+			<param name="title_tag" value="h3"/>
+		</cms:module>
+		<a href="#" class="close"><cms:svg file="site_sprite.svg" symbol="icon-cross"/></a>
+	</div>
+
+	<!-- Emotional support  -->
+	<div id="emotion" class="popup">
+		<cms:module
+			name="articles"
+			action="show"
+			text_id="emotion"
+			group="popup_articles"
+			template="stock/article_generic.xml"
+			>
+			<param name="title" value=""/>
+			<param name="title_tag" value="h3"/>
+		</cms:module>
+		<a href="#" class="close"><cms:svg file="site_sprite.svg" symbol="icon-cross"/></a>
+	</div>
+
+	<!-- Fitness article  -->
+	<div id="fitness" class="popup">
+		<cms:module
+			name="articles"
+			action="show"
+			text_id="fitness"
+			group="popup_articles"
+			template="stock/article_generic.xml"
+			>
+			<param name="title" value=""/>
+			<param name="title_tag" value="h3"/>
+		</cms:module>
+		<a href="#" class="close"><cms:svg file="site_sprite.svg" symbol="icon-cross"/></a>
+	</div>
+
+	<!-- Sleep article  -->
+	<div id="sleep" class="popup">
+		<cms:module
+			name="articles"
+			action="show"
+			text_id="sleep"
+			group="popup_articles"
+			template="stock/article_generic.xml"
+			>
+			<param name="title" value=""/>
+			<param name="title_tag" value="h3"/>
+		</cms:module>
+		<a href="#" class="close"><cms:svg file="site_sprite.svg" symbol="icon-cross"/></a>
+	</div>
+</document>
