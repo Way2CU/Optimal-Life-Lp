@@ -109,6 +109,18 @@
 					<cms:text constant="phone"/>
 				</a>
 			</section>
+
+			<!-- Sectoin features -->
+			<section class="features">
+				<cms:module
+					name="articles"
+					action="show_list"
+					group="features"
+					template="stock/features_generic.xml"
+					>
+					<param name="sprite" value="site_sprite.svg"/>
+				</cms:module>
+			</section>
 		</body>
 	</html>
 </document>
