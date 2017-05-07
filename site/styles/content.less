@@ -259,14 +259,12 @@ div.form_container div.controls button {
 
 	&:hover {
 		background-color: darken(@color_green, 10%);
-
 	}
 }
 
 /*
  * Section treatment
 */
-
 section.treatments {
 	padding: 0 calc(~'(100% - 1200px)' / 2);
 	text-align: center;
@@ -319,3 +317,48 @@ section.treatments a {
 		}
 	}
 }
+
+/*
+ * Section video
+*/
+
+section.video {
+ 	padding: 2em calc(~'(100% - 1200px)' / 2);
+ 	text-align: center;
+ 	background-image: url(../images/pattern.png);
+ 	background-repeat: repeat;
+ 	background-position: center;
+
+ 	article:last-of-type p {
+		color: @color_purple;
+		font-size: 1.5em;
+ 	}
+
+ 	img {
+ 		border: 1px solid @color_red;
+ 		transition: all 0.3s;
+
+ 		&:hover {
+ 			box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+ 		}
+ 	}
+
+ 	a.phone {
+ 		direction: ltr;
+ 		display: block;
+ 		width: 80px;
+ 		margin: 2em auto;
+
+ 		svg {
+ 			display: inline-block;
+ 			vertical-align: middle;
+ 			width: 1.5em;
+ 			height: 1.5em;
+ 			padding-right: 0.5em;
+ 			fill: @color_blue;
+ 		}
+
+ 		.link_style(@color_blue);
+ 	}
+}
+

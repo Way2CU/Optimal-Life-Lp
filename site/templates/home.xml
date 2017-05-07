@@ -75,6 +75,32 @@
 				<!-- Links with images to popup article -->
 				<cms:template file="parts/links_images_popup.xml" />
 			</section>
+
+			<!-- Section video -->
+			<section class="video">
+				<!-- Link for youtube video dialog -->
+				<a href="javascript:void(0)" class="youtube_link">
+					<img
+						src="_BASEURL.'/site/images/youtube_video.jpg'"
+						alt="youtube_video_image"
+						cms:eval="src"
+						/>
+				</a>
+
+				<!-- Articles related to section -->
+				<cms:module
+					name="articles"
+					action="show_list"
+					group="section_videos"
+					template="stock/article_generic.xml"
+					/>
+
+				<!-- Phone link -->
+				<a href="'tel:'.urlencode(Language::get_text('phone'))" cms:eval="href" class="phone">
+					<cms:svg file="site_sprite.svg" symbol="icon-phone" />
+					<cms:text constant="phone"/>
+				</a>
+			</section>
 		</body>
 	</html>
 </document>
