@@ -25,3 +25,30 @@
   font-weight: 700;
   src: url(../images/fonts/heebo_bold.ttf) format('truetype');
 }
+
+.link_style(@color) {
+	text-decoration: none;
+	font-weight: 700;
+	color: @color;
+	border: 2px solid @color;
+	border-radius: 50px;
+	padding: 1em 2em;
+	transition: all 0.3s;
+
+	&:hover {
+		color: white;
+		background-color: @color;
+		border: 2px solid white;
+
+		svg {
+			fill: white;
+		}
+	}
+}
+
+// Arrow svg animation
+
+@keyframes floating {
+	from { transform: translateY(-20%); }
+	to { transform: translateY(0%); }
+}

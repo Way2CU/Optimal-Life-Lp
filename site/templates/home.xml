@@ -14,9 +14,67 @@
 			<cms:template file="stock/header_generic.xml">
 				<param name="fixed" value=""/>
 				<param name="menu" value="parts/menu_items.xml"/>
-				<param name="logo_sprite_icon" value="icon-ibi-trade-logo"/>
-				<param name="sprite" value="site-sprite.svg"/>
+				<param name="logo_sprite_icon" value="icon-logo"/>
+				<param name="phone_sprite_icon" value="icon-phone"/>
+				<param name="phone" value="phone"/>
+				<param name="sprite" value="site_sprite.svg"/>
 			</cms:template>
+
+			<!-- section header -->
+			<section class="header">
+				<h1><cms:text constant="main_heading" /></h1>
+
+				<!-- popup article template -->
+				<cms:template file="parts/popup_articles.xml" />
+
+				<!-- Phone link -->
+				<a href="'tel:'.urlencode(Language::get_text('phone'))" cms:eval="href" class="phone">
+					<cms:svg file="site_sprite.svg" symbol="icon-phone" />
+					<cms:text constant="phone"/>
+				</a>
+
+				<!-- Bottom article -->
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="header_article"
+					group="header_articles"
+					template="stock/article_generic.xml"
+					/>
+
+				<!-- Animative arrow -->
+				<cms:svg file="site_sprite" symbol="icon-arrow" class="arrow" />
+
+				<!-- Contact form -->
+				<div class="form_container">
+					<h3><cms:text constant="form_title" /></h3>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+						/>
+				</div>
+			</section>
+
+			<!-- Treatments section -->
+			<section class="treatments">
+
+				<!-- main article -->
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="treatments_main"
+					group="treatments_articles"
+					template="stock/article_generic.xml"
+					/>
+
+				<!-- Buttefly with explenation constant -->
+				<cms:svg file="site_sprite.svg" symbol="icon-butterfly"/>
+				<h4><cms:text constant="click_here_for_treatment" /></h4>
+
+				<!-- Links with images to popup article -->
+				<cms:template file="parts/links_images_popup.xml" />
+			</section>
 		</body>
 	</html>
 </document>
