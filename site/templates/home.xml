@@ -87,6 +87,14 @@
 						/>
 				</a>
 
+				<!-- Youtube module -->
+				<cms:module
+					name="youtube"
+					action="show"
+					text_id="video"
+					template="parts/youtube.xml"
+					/>
+
 				<!-- Articles related to section -->
 				<cms:module
 					name="articles"
