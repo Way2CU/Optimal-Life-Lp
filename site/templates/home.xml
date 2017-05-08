@@ -79,21 +79,16 @@
 			<!-- Section video -->
 			<section class="video">
 				<!-- Link for youtube video dialog -->
-				<a href="javascript:void(0)" class="youtube_link">
+				<a href="URL::make(array(), 'video.xml')"
+					cms:eval="href"
+					class="youtube_link"
+					>
 					<img
 						src="_BASEURL.'/site/images/youtube_video.jpg'"
 						alt="youtube_video_image"
 						cms:eval="src"
 						/>
 				</a>
-
-				<!-- Youtube module -->
-				<cms:module
-					name="youtube"
-					action="show"
-					text_id="video"
-					template="parts/youtube.xml"
-					/>
 
 				<!-- Articles related to section -->
 				<cms:module
@@ -112,6 +107,7 @@
 
 			<!-- Sectoin features -->
 			<section class="features">
+				<h1><cms:text constant="some_facts" /></h1>
 				<cms:module
 					name="articles"
 					action="show_list"
@@ -119,6 +115,7 @@
 					template="stock/features_generic.xml"
 					>
 					<param name="sprite" value="site_sprite.svg"/>
+					<param name="title" value=""/>
 				</cms:module>
 			</section>
 		</body>
