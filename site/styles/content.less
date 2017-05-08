@@ -65,8 +65,8 @@ div.popup {
 	background-color: white;
 	box-sizing: border-box;
 	z-index: 100000;
-	opacity: 0;
-	pointer-events: none;
+	// opacity: 0;
+	// pointer-events: none;
 }
 
 div.popup a.close {
@@ -115,16 +115,16 @@ div.popup article {
 	}
 }
 
-div#stomach:target,
-div#cure:target,
-div#bariatric:target,
-div#nutrition:target,
-div#emotion:target,
-div#fitness:target,
-div#sleep:target {
-	opacity: 1;
-	pointer-events: auto;
-}
+// div#stomach:target,
+// div#cure:target,
+// div#bariatric:target,
+// div#nutrition:target,
+// div#emotion:target,
+// div#fitness:target,
+// div#sleep:target {
+// 	opacity: 1;
+// 	pointer-events: auto;
+// }
 
 section.header a.phone {
 	direction: ltr;
@@ -403,5 +403,14 @@ section.features li {
 		width: 150px;
 		height: 150px;
 		padding-bottom: 1em;
+	}
+}
+
+/*
+ * Tablet
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	div.form_container form {
+		padding: 0 calc(~'(100% - 900px)' / 2);
 	}
 }
