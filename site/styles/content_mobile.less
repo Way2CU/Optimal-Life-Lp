@@ -1,0 +1,109 @@
+/**
+ * Main_content Style Sheet
+ * Optimal Life LP
+ *
+ * Copyright (c) 2017. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev
+ */
+
+
+section.header {
+	padding-top: 75px;
+	position: relative;
+}
+
+section.header h1 {
+	color: @color_purple;
+	text-align: center;
+}
+
+section.header img {
+	width: 100%;
+	height: auto;
+}
+
+section div.popup_links {
+	margin: 0 auto;
+	box-sizing: border-box;
+	text-align: center;
+
+	a {
+		display: inline-block;
+		vertical-align: middle;
+		text-decoration: none;
+		color: @color_blue;
+		padding: 0 0.5em;
+		font-size: 1.2em;
+		position: relative;
+		border-left: 2px solid @color_blue;
+		margin-bottom: 0.5em;
+		transition: all 0.3s;
+
+		&:hover {
+			color: darken(@color_blue, 10%);
+			text-decoration: underline;
+		}
+	}
+
+	a:nth-of-type(3),
+	a:nth-of-type(7) {
+		border: none;
+	}
+}
+
+section.header a.phone {
+	direction: ltr;
+	display: block;
+	width: 80px;
+	margin: 2em auto;
+
+	svg {
+		display: inline-block;
+		vertical-align: middle;
+		width: 1.5em;
+		height: 1.5em;
+		padding-right: 0.5em;
+		fill: @color_blue;
+	}
+
+	.link_style(@color_blue);
+}
+
+section.header > article {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+
+	p {
+		font-size: 1.1em;
+		font-weight: 400;
+		color: @color_grey;
+	}
+}
+
+section.header svg.arrow {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 1em;
+	fill: @color_grey;
+
+	animation-name: floating;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+div.dialog {
+	max-width: none;
+}
+
+div.dialog div.inner_content {
+	text-align: center;
+}
+
+div.dialog div.inner_content iframe {
+	padding-top: 1em;
+}

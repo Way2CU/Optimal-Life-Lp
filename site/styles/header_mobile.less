@@ -1,0 +1,50 @@
+ /**
+ * Header_mobile Style Sheet
+ * Optimal Life LP
+ *
+ * Copyright (c) 2017. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev
+ */
+
+header {
+	position: fixed;
+	text-align: center;
+	background-color: white;
+ 	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+ 	z-index: 100000;
+ 	background-color: white;
+ 	width: 100%;
+ 	top: 0;
+}
+
+header a.logo {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 0.5em;
+	svg {
+		width: 150px;
+		height: 50px;
+	}
+}
+
+header a.form,
+header a.phone {
+	direction: ltr;
+	display: inline-block;
+	vertical-align: middle;
+	color: @color_blue;
+	padding: 1em;
+
+	svg {
+		width: 35px;
+		height: 35px;
+	}
+}
+
+header a.form {
+	float: right;
+}
+
+header a.phone {
+	float: left;
+}
