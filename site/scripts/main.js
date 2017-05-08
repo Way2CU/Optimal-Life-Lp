@@ -69,24 +69,25 @@ Site.on_load = function() {
 
 	var id_list = ['stomach', 'cure', 'bariatric', 'nutrition', 'emotion', 'fitness', 'sleep'];
 
-	 for(var i=0; i < id_list.length; i++) {
-	 	var id = id_list[i];
-	 	var dialog = new Caracal.Dialog();
-	 	var links = document.querySelectorAll('a[href="#' + id + '"]');
-	 	dialog.set_content_from_dom('#' + id);
-	 	console.log();
+	Site.dialogs = new Object();
 
-	 	var handle_click = function(event) {
-	 		dialog.open();
-	 	};
+	for(var i=0; i < id_list.length; i++) {
+	    var id = id_list[i];
+	    var links = document.querySelectorAll('a[href="#' + id + '"]');
 
-	 	links[0].addEventListener('click', function(event) {
-	 	    dialog.open();
-	 	});
-	 	links[1].addEventListener('click', function(event) {
-	 	    dialog.open();
-	 	});
-	 }
+	    Site.dialogs[id] = new Caracal.Dialog();
+	    Site.dialogs[id].set_content_from_dom('#' + id);
+
+	    var handle_click = function(event) {
+	        event.preventDefault();
+
+	        var id = this.getAttribute('href').substr(1);
+	        Site.dialogs[id].open();
+	    };
+
+	    links[0].addEventListener('click', handle_click);
+	    links[1].addEventListener('click', handle_click);
+	}
 };
 
 
