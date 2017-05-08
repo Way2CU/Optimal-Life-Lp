@@ -61,10 +61,32 @@ Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
 
+	//Video link connected to click event
 	Site.video_link = document.querySelector('a.youtube_link');
 	Site.video_link.addEventListener('click', handle_dialog_video);
-
+	// New dialog video
 	Site.dialog_video = new Caracal.Dialog();
+
+	var id_list = ['stomach', 'cure', 'bariatric', 'nutrition', 'emotion', 'fitness', 'sleep'];
+
+	 for(var i=0; i < id_list.length; i++) {
+	 	var id = id_list[i];
+	 	var dialog = new Caracal.Dialog();
+	 	var links = document.querySelectorAll('a[href="#' + id + '"]');
+	 	dialog.set_content_from_dom('#' + id);
+	 	console.log();
+
+	 	var handle_click = function(event) {
+	 		dialog.open();
+	 	};
+
+	 	links[0].addEventListener('click', function(event) {
+	 	    dialog.open();
+	 	});
+	 	links[1].addEventListener('click', function(event) {
+	 	    dialog.open();
+	 	});
+	 }
 };
 
 
