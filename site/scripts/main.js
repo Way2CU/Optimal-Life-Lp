@@ -47,7 +47,11 @@ Site.is_mobile = function() {
 
 handle_dialog_video = function(event) {
 	event.preventDefault();
-	Site.dialog_video.open();
+	Site.dialog_video
+		.setTitle(this.getAttribute('title'))
+		.setContentFromURL(this.getAttribute('href'))
+		.set_size('600px', '400px')
+		.showWhenReady();
 }
 
 /**
@@ -61,7 +65,6 @@ Site.on_load = function() {
 	Site.video_link.addEventListener('click', handle_dialog_video);
 
 	Site.dialog_video = new Caracal.Dialog();
-	Site.dialog_video.set_content_from_dom('iframe.video');
 };
 
 
