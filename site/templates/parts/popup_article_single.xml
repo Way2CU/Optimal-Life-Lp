@@ -11,7 +11,6 @@
 			<param name="title" value=""/>
 			<param name="title_tag" value="h3"/>
 		</cms:module>
-		<a href="#" class="close"><cms:svg file="site_sprite.svg" symbol="icon-cross"/></a>
 	</div>
 
 	<!-- Fat cure -->
@@ -26,7 +25,6 @@
 			<param name="title" value=""/>
 			<param name="title_tag" value="h3"/>
 		</cms:module>
-		<a href="#" class="close"><cms:svg file="site_sprite.svg" symbol="icon-cross"/></a>
 	</div>
 
 	<!-- Bariatric -->
@@ -41,7 +39,6 @@
 			<param name="title" value=""/>
 			<param name="title_tag" value="h3"/>
 		</cms:module>
-		<a href="#" class="close"><cms:svg file="site_sprite.svg" symbol="icon-cross"/></a>
 	</div>
 
 	<!-- nutrition -->
@@ -56,7 +53,6 @@
 			<param name="title" value=""/>
 			<param name="title_tag" value="h3"/>
 		</cms:module>
-		<a href="#" class="close"><cms:svg file="site_sprite.svg" symbol="icon-cross"/></a>
 	</div>
 
 	<!-- Emotional support  -->
@@ -71,7 +67,6 @@
 			<param name="title" value=""/>
 			<param name="title_tag" value="h3"/>
 		</cms:module>
-		<a href="#" class="close"><cms:svg file="site_sprite.svg" symbol="icon-cross"/></a>
 	</div>
 
 	<!-- Fitness article  -->
@@ -86,7 +81,6 @@
 			<param name="title" value=""/>
 			<param name="title_tag" value="h3"/>
 		</cms:module>
-		<a href="#" class="close"><cms:svg file="site_sprite.svg" symbol="icon-cross"/></a>
 	</div>
 
 	<!-- Sleep article  -->
@@ -101,6 +95,5 @@
 			<param name="title" value=""/>
 			<param name="title_tag" value="h3"/>
 		</cms:module>
-		<a href="#" class="close"><cms:svg file="site_sprite.svg" symbol="icon-cross"/></a>
 	</div>
 </document>

@@ -10,19 +10,34 @@
 		<body>
 			<cms:svg file="site_sprite.svg"/>
 
-			<!-- Generic header -->
-			<cms:template file="stock/header_generic.xml">
-				<param name="fixed" value=""/>
-				<param name="menu" value="parts/menu_items.xml"/>
-				<param name="logo_sprite_icon" value="icon-logo"/>
-				<param name="phone_sprite_icon" value="icon-phone"/>
-				<param name="phone" value="phone"/>
-				<param name="sprite" value="site_sprite.svg"/>
-			</cms:template>
+			<!-- Generic desktop header -->
+			<cms:desktop>
+				<cms:template file="stock/header_generic.xml">
+					<param name="fixed" value=""/>
+					<param name="menu" value="parts/menu_items.xml"/>
+					<param name="logo_sprite_icon" value="icon-logo"/>
+					<param name="phone_sprite_icon" value="icon-phone"/>
+					<param name="phone" value="phone"/>
+					<param name="sprite" value="site_sprite.svg"/>
+				</cms:template>
+			</cms:desktop>
+
+			<!-- Custom mobile menu -->
+			<cms:mobile>
+				<cms:template file="parts/mobile_header.xml"/>
+			</cms:mobile>
 
 			<!-- section header -->
 			<section class="header">
 				<h1><cms:text constant="main_heading" /></h1>
+
+				<cms:mobile>
+					<img
+						src="_BASEURL.'/site/images/mobile_header.jpg'"
+						alt="sad_people"
+						cms:eval="src"
+						/>
+				</cms:mobile>
 
 				<!-- popup article template -->
 				<cms:template file="parts/popup_articles.xml" />

@@ -1,0 +1,18 @@
+<document>
+	<header>
+		<!-- Link to contact form -->
+		<a href="#contact_form" class="form">
+			<cms:svg file="site_sprite.svg" symbol="icon-form" />
+		</a>
+
+		<!-- Link to contact form -->
+		<a href="#top" class="logo">
+			<cms:svg file="logo.svg"/>
+		</a>
+
+		<!-- Phone link -->
+		<a href="'tel:'.urlencode(Language::get_text('phone'))" cms:eval="href" class="phone">
+			<cms:svg file="site_sprite.svg" symbol="icon-phone" />
+		</a>
+	</header>
+</document>
