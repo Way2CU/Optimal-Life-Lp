@@ -162,8 +162,17 @@
 					<cms:text constant="phone"/>
 				</a>
 
+				<cms:mobile>
+				<!-- Footer image -->
+				<img
+					src="_BASEURL.'/site/images/mobile_footer.jpg'"
+					alt="dad_and_son_happy"
+					cms:eval="src"
+					/>
+				</cms:mobile>
+
 				<!-- Contact form -->
-				<div class="form_container">
+				<div class="form_container" id="contact_form">
 					<h3><cms:text constant="form_title" /></h3>
 					<cms:module
 						name="contact_form"
