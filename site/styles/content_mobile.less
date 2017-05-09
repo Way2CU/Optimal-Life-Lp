@@ -300,8 +300,10 @@ div.dialog.visible {
 	opacity: 1;
 }
 
-div.dialog.visible.active div.content {
+div.dialog div.content {
 	width: 90vw;
+	max-height: 70vh;
+	overflow-y: auto;
 }
 
 div.dialog.visible.active div.content div.inner_content img {
