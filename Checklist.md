@@ -4,8 +4,8 @@ All of these need to be checked manually, changed and then committed. System wil
 
 - Site specific items:
 	- [x] `system_init.xml` file contains all the modules used;
-	- [ ] Deployment script `group_vars/all` file is configured;
-	- [ ] Deployment `hosts.txt` file is configured;
+	- [x] Deployment script `group_vars/all` file is configured;
+	- [x] Deployment `hosts.txt` file is configured;
 	- [x] All the languages site is targeting are configured in `config.php`;
 	- [x] Site title is properly defined;
 	- [x] No errors or warnings are reported in the log file;
@@ -23,12 +23,12 @@ All of these need to be checked manually, changed and then committed. System wil
 	- [x] SendGrid API access is configured;
 	-> [x] Mandrill API access is configured;
 	-> [x] SMTP credentials are configured and working;
-	- [ ] Default sender email;
-	- [ ] Default recipient;
+	- [x] Default sender email;
+	- [x] Default recipient;
 	- [x] Forms have honeypot field;
 	- [x] Templates for each form are created and assigned to form;
 	- [x] Templates have subject properly defined;
-	- [ ] Form submits and client/developer receives email.
+	- [x] Form submits and client/developer receives email.
 - Shop:
 	-> [x] Desired payment method is enabled and configured;
 	-> [x] Default warehouse is created;
