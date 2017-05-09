@@ -403,12 +403,30 @@ section.features li {
 /*
  * Contact Dialog form
 */
+div.dialog.dialog_form div.title {
+	background-color: @color_purple;
+	font-size: 1.2em;
+}
+
+div.dialog.dialog_form div.content {
+	padding: 0;
+}
+
+div.dialog.dialog_form div.inner_content {
+	background-color: fade(@color_purple, 70%);
+}
+
+div.dialog.dialog_form div.command_bar {
+	padding: 0.5em 0;
+}
+
 div#contact_dialog {
 	width: 400px;
+	margin: 0 auto;
 	box-sizing: border-box;
 	padding: 2em 1em;
 	text-align: center;
-	background-color: fade(@color_purple, 70%);
+	// background-color: fade(@color_purple, 70%);
 }
 
 div#contact_dialog h3 {
