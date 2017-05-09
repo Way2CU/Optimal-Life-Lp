@@ -54,6 +54,12 @@ handle_dialog_video = function(event) {
 		.showWhenReady();
 }
 
+handle_dialog_form = function(event) {
+	event.preventDefault();
+	Site.dialog_form.show();
+
+}
+
 /**
  * Function called when document and images have been completely loaded.
  */
@@ -88,6 +94,13 @@ Site.on_load = function() {
 	    links[0].addEventListener('click', handle_click);
 	    links[1].addEventListener('click', handle_click);
 	}
+
+	//From dialog
+	Site.dialog_form = new Caracal.Dialog();
+	Site.dialog_form.set_content_from_dom('div#contact_dialog');
+
+	Site.show_dialog_button = document.querySelector('a.call');
+	Site.show_dialog_button.addEventListener('click', handle_dialog_form);
 };
 
 

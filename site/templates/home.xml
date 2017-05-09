@@ -186,6 +186,16 @@
 				<param name="text" value="copyright_text"/>
 				<param name="light" value=""/>
 			</cms:template>
+
+			<!-- Contact dialog form -->
+			<div id="contact_dialog">
+				<cms:module
+					name="contact_form"
+					action="show"
+					text_id="contact_form"
+					/>
+			</div>
+
 		</body>
 	</html>
 </document>
