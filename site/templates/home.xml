@@ -11,23 +11,49 @@
 			<cms:svg file="site_sprite.svg"/>
 
 			<!-- Generic desktop header -->
-			<cms:desktop>
-				<cms:template file="stock/header_generic.xml">
-					<param name="fixed" value=""/>
-					<param name="menu" value="parts/menu_items.xml"/>
-					<param name="logo_sprite_icon" value="icon-logo"/>
-					<param name="phone_sprite_icon" value="icon-phone"/>
-					<param name="phone" value="phone"/>
-					<param name="sprite" value="site_sprite.svg"/>
-				</cms:template>
-			</cms:desktop>
+			<cms:test name="logo" method="simple">
+				<version name="first">
+					<cms:desktop>
+						<cms:template file="stock/header_generic.xml">
+							<param name="fixed" value=""/>
+							<param name="class" value="first_version"/>
+							<param name="menu" value="parts/menu_items.xml"/>
+							<param name="logo_sprite_icon" value="icon-logo"/>
+							<param name="phone_sprite_icon" value="icon-phone"/>
+							<param name="phone" value="phone"/>
+							<param name="sprite" value="site_sprite.svg"/>
+						</cms:template>
+					</cms:desktop>
 
-			<!-- Custom mobile menu -->
-			<cms:mobile>
-				<cms:template file="parts/mobile_header.xml"/>
-			</cms:mobile>
+					<cms:mobile>
+						<cms:template file="parts/mobile_header.xml">
+							<param name="class" value="first_version"/>
+						</cms:template>
+					</cms:mobile>
+				</version>
 
-			<!-- section header -->
+				<version name="second">
+					<cms:desktop>
+						<cms:template file="stock/header_generic.xml">
+							<param name="fixed" value=""/>
+							<param name="class" value="second_version"/>
+							<param name="menu" value="parts/menu_items.xml"/>
+							<param name="logo_sprite_icon" value="icon-logo"/>
+							<param name="phone_sprite_icon" value="icon-phone"/>
+							<param name="phone" value="phone"/>
+							<param name="sprite" value="site_sprite.svg"/>
+						</cms:template>
+					</cms:desktop>
+
+					<cms:mobile>
+						<cms:template file="parts/mobile_header.xml">
+							<param name="class" value="second_version"/>
+						</cms:template>
+					</cms:mobile>
+				</version>
+			</cms:test>
+
+			<!-- Section header -->
 			<section class="header">
 				<h1><cms:text constant="main_heading" /></h1>
 
@@ -163,12 +189,12 @@
 				</a>
 
 				<cms:mobile>
-				<!-- Footer image -->
-				<img
-					src="_BASEURL.'/site/images/mobile_footer.jpg'"
-					alt="dad_and_son_happy"
-					cms:eval="src"
-					/>
+					<!-- Footer image -->
+					<img
+						src="_BASEURL.'/site/images/mobile_footer.jpg'"
+						alt="dad_and_son_happy"
+						cms:eval="src"
+						/>
 				</cms:mobile>
 
 				<!-- Contact form -->
