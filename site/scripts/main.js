@@ -102,7 +102,7 @@ Site.on_load = function() {
 		.add_class('dialog_form')
 		.set_title(language_handler.getText(null, 'form_title'));
 
-	if (!Site.is_mobile) {
+	if (!Site.is_mobile()) {
 		Site.show_dialog_button = document.querySelector('a.call');
 		Site.show_dialog_button.addEventListener('click', handle_dialog_form);
 	}
