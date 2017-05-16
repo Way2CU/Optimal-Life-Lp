@@ -10,7 +10,10 @@
 
 		<!-- Link to contact form -->
 		<a href="#top" class="logo">
-			<cms:svg file="logo.svg"/>
+			<cms:svg
+				file="$template['logo']"
+				cms:eval="file"
+				/>
 		</a>
 
 		<!-- Phone link -->
