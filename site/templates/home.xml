@@ -18,7 +18,7 @@
 							<param name="fixed" value=""/>
 							<param name="class" value="first_version"/>
 							<param name="menu" value="parts/menu_items.xml"/>
-							<param name="logo_sprite_icon" value="icon-logo"/>
+							<param name="logo" value="logo.svg"/>
 							<param name="phone_sprite_icon" value="icon-phone"/>
 							<param name="phone" value="phone"/>
 							<param name="sprite" value="site_sprite.svg"/>
@@ -28,6 +28,7 @@
 					<cms:mobile>
 						<cms:template file="parts/mobile_header.xml">
 							<param name="class" value="first_version"/>
+							<param name="logo" value="logo.svg"/>
 						</cms:template>
 					</cms:mobile>
 				</version>
@@ -38,7 +39,7 @@
 							<param name="fixed" value=""/>
 							<param name="class" value="second_version"/>
 							<param name="menu" value="parts/menu_items.xml"/>
-							<param name="logo_sprite_icon" value="icon-logo"/>
+							<param name="logo" value="logo2.svg"/>
 							<param name="phone_sprite_icon" value="icon-phone"/>
 							<param name="phone" value="phone"/>
 							<param name="sprite" value="site_sprite.svg"/>
@@ -48,6 +49,7 @@
 					<cms:mobile>
 						<cms:template file="parts/mobile_header.xml">
 							<param name="class" value="second_version"/>
+							<param name="logo" value="logo2.svg"/>
 						</cms:template>
 					</cms:mobile>
 				</version>
