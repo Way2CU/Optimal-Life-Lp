@@ -27,6 +27,7 @@ section.header img {
 }
 
 section div.popup_links {
+	padding-top: 2em;
 	margin: 0 auto;
 	box-sizing: border-box;
 	text-align: center;
@@ -62,9 +63,7 @@ section div.popup_links {
 
 section.header a.phone {
 	direction: ltr;
-	display: block;
-	width: 80px;
-	margin: 2em auto;
+	margin: 1em auto;
 
 	svg {
 		display: inline-block;
@@ -246,7 +245,6 @@ section.video {
  	a.phone {
  		direction: ltr;
  		display: block;
- 		width: 80px;
  		margin: 2em auto;
 
  		svg {
@@ -276,7 +274,12 @@ section.features li {
 	text-align: center;
 	padding-bottom: 2em;
 
-	p,h4 {
+	p {
+		margin: 0;
+		padding-bottom: 0.5em;
+	}
+
+	h4 {
 		margin: 0;
 		padding-bottom: 0.5em;
 		color: @color_purple;
