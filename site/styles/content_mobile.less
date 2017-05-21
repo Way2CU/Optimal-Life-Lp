@@ -11,23 +11,43 @@ section.header {
 	padding-top: 75px;
 	position: relative;
 	text-align: center;
+
+	background-image: url(../images/mobile_header.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center 150px;
 }
 
 section.header h1 {
 	color: @color_purple;
 	text-align: center;
 	margin: 0;
-	padding: 1em 0.5em;
+	padding: 0.5em;
 	min-height: 100px;
+
+	position: relative;
+
+	&:after {
+		content: '';
+		display: block;
+		margin: 0 auto;
+		width: 50px;
+		height: 50px;
+		background-image: url(../images/arrow.svg);
+		background-size: 50px 50px;
+		background-position: center;
+		margin-top: 0.5em;
+	}
 }
 
 section.header img {
 	width: 100%;
 	height: auto;
+	display: block;
 }
 
 section div.popup_links {
-	padding-top: 2em;
+	padding-top: 40vh;
 	margin: 0 auto;
 	box-sizing: border-box;
 	text-align: center;
@@ -88,16 +108,6 @@ section.header > article {
 		font-weight: 400;
 		color: @color_grey;
 	}
-}
-
-section.header svg.arrow {
-	position: absolute;
-	top: 300px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 50px;
-	height: 50px;
-	fill: @color_grey;
 }
 
 /*
