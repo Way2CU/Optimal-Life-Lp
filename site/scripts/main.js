@@ -48,10 +48,10 @@ Site.is_mobile = function() {
 handle_dialog_video = function(event) {
 	event.preventDefault();
 	Site.dialog_video
-		.setTitle(this.getAttribute('title'))
-		.setContentFromURL(this.getAttribute('href'))
+		.set_title(this.getAttribute('title'))
+		.set_content_from_url(this.getAttribute('href'))
 		.set_size('600px', '400px')
-		.showWhenReady();
+		.open_when_ready();
 }
 
 handle_dialog_form = function(event) {
