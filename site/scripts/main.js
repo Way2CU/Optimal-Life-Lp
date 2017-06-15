@@ -111,6 +111,13 @@ Site.on_load = function() {
 	var version = document.querySelector('header').classList.contains('first_version') ? 'first' : 'second';
 	window.dataLayer = window.dataLayer || new Array();
 	window.dataLayer.push({'version': version});
+
+	// handle analytics event
+		for (var i=0, count=Caracal.ContactForm.list.length; i<count; i++)
+			Caracal.ContactForm.list[i].events.connect('submit-success', function(data) {
+				dataLayer.push({'event': 'leadSent'});
+				return true;
+			});
 };
 
 
