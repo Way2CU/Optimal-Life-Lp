@@ -12,9 +12,23 @@
 @import 'footer.less';
 @import (css) 'stock/header.css';
 @import (css) 'stock/copyright.css';
+@import (reference) 'stock/functions.less';
 
 body {
 	background-color: white;
 	color: black;
 	font-family: 'heboo', Arial, serif;
+	background-color: @color_background;
+	color: @color_text;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+	margin-bottom: @header_spacing;
+	padding: 0;
+}
+
