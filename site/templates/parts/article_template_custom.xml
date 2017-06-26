@@ -1,0 +1,11 @@
+<document>
+	<article>
+		<h3><cms:var param="title" multilanguage="yes"/></h3>
+		<cms:markdown param="content" multilanguage="yes"/>
+		<img
+			src="gallery::getThumbnailById($params['id'], null, 400, Thumbnail::CONSTRAIN_HEIGHT)"
+			alt="$params['title'][$language]"
+			cms:eval="src,alt"
+		/>
+	</article>
+</document>

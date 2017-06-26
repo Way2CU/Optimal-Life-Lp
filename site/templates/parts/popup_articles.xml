@@ -43,7 +43,7 @@
 			action="show"
 			text_id="stomach"
 			group="popup_articles"
-			template="stock/article_generic.xml"
+			template="parts/article_template_custom.xml"
 			>
 			<param name="title" value=""/>
 			<param name="title_tag" value="h3"/>
@@ -57,7 +57,7 @@
 			action="show"
 			text_id="fat_cure"
 			group="popup_articles"
-			template="stock/article_generic.xml"
+			template="parts/article_template_custom.xml"
 			>
 			<param name="title" value=""/>
 			<param name="title_tag" value="h3"/>
@@ -71,7 +71,7 @@
 			action="show"
 			text_id="bariatric"
 			group="popup_articles"
-			template="stock/article_generic.xml"
+			template="parts/article_template_custom.xml"
 			>
 			<param name="title" value=""/>
 			<param name="title_tag" value="h3"/>
@@ -85,7 +85,7 @@
 			action="show"
 			text_id="nutrition"
 			group="popup_articles"
-			template="stock/article_generic.xml"
+			template="parts/article_template_custom.xml"
 			>
 			<param name="title" value=""/>
 			<param name="title_tag" value="h3"/>
@@ -99,7 +99,7 @@
 			action="show"
 			text_id="emotion"
 			group="popup_articles"
-			template="stock/article_generic.xml"
+			template="parts/article_template_custom.xml"
 			>
 			<param name="title" value=""/>
 			<param name="title_tag" value="h3"/>
@@ -113,7 +113,7 @@
 			action="show"
 			text_id="fitness"
 			group="popup_articles"
-			template="stock/article_generic.xml"
+			template="parts/article_template_custom.xml"
 			>
 			<param name="title" value=""/>
 			<param name="title_tag" value="h3"/>
@@ -127,7 +127,7 @@
 			action="show"
 			text_id="sleep"
 			group="popup_articles"
-			template="stock/article_generic.xml"
+			template="parts/article_template_custom.xml"
 			>
 			<param name="title" value=""/>
 			<param name="title_tag" value="h3"/>
