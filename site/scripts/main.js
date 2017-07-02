@@ -99,7 +99,7 @@ Site.on_load = function() {
 	Site.dialog_form = new Caracal.Dialog();
 	Site.dialog_form
 		.set_content_from_dom('div#contact_dialog')
-		.add_class('dialog_form')
+		.addClass('dialog_form')
 		.set_title(language_handler.getText(null, 'form_title'));
 
 	if (!Site.is_mobile()) {
